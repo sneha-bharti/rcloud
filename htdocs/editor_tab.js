@@ -875,7 +875,7 @@ var editor = function () {
             .append("div")
             .attr("class", "comment-body-text")
             .style({"max-width":"95%"})
-            .text(function(d) { return d.body; })
+            .html(function(d) { return d.body; })
             .each(function(d){
                 var comment_element = $(this);
                 var edit_comment = function(v){
