@@ -1,0 +1,8 @@
+Package: snippetgist
+Title: Gist interface to GitHub
+Version: 1.0-0
+Author: Naresh kumar <naresh.kumar@mu-sigma.com>
+Maintainer: Naresh kumar <naresh.kumar@mu-sigma.com>
+Description: Gist interface to Stash
+Imports: gist
+License: MIT

@@ -178,7 +178,7 @@ var shell = (function() {
             var url;
             if(gist_url_) {
                 url = gist_url_;
-                url += notebook_user_ + '/';
+                //url += notebook_user_ + '/';
             }
             else
                 url = github_url_ + 'gist/';

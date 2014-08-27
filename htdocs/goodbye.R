@@ -19,8 +19,8 @@ list(paste0(
     </div>
     <div class="container" id="main-div">
       <p>You are now logged out of RCloud. <a href="/login.R">Log back in.</a></p>
-      <p>However, you may still be logged into <a href="',rcloud.config('github.base.url'),'">GitHub</a>,
-      use <a href="',gsub("/+$","",rcloud.config('github.base.url')),'/logout">GitHub Logout</a> to log out of there as well.
+      <p>However, you may still be logged into <a href="',rcloud.config('github.base.url'),'">', if(rcloud.config('gist.backend') == 'snippetgist') 'Stash' else 'Github','</a>,
+      use <a href="',gsub("/+$","",rcloud.config('github.base.url')), if(rcloud.config('gist.backend') == 'snippetgist') '/j_stash_security_logout' else 'logout' ,'">',if(rcloud.config('gist.backend') == 'snippetgist') 'Stash' else 'Github',' Logout</a> to log out of there as well.
     </div>
   </body>
 </html>'), "text/html")
